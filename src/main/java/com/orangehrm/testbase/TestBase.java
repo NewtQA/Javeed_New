@@ -131,16 +131,6 @@ public class TestBase {
 			
 		
 	}
-	//main method need to delete
-	public static void main(String[] args) throws IOException
-	{
-		TestBase base=new TestBase();
-		//base.LaunchBrowser("chrome");
-		base.loadPropertiesfile();
-		System.out.println(base.OR.getProperty("username"));
-		System.out.println(base.OR.getProperty("baseurl"));
-		System.out.println(base.OR.getProperty("testcase"));
 		
-	}
 
 }
