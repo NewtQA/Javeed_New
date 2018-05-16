@@ -3,6 +3,7 @@ package com.orangehrm.excelutils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Iterator;
 
 import org.apache.poi.ss.usermodel.Row;
@@ -11,7 +12,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class FetchDataFromXL {
 	
-public String[][] fetchXLData(String ExcelLocation,String SheetName)
+public String[][] fetchXLData(String ExcelLocation,String SheetName) throws IOException
 {
 	String dataSets[][]=null;
 	try {
@@ -39,5 +40,5 @@ public String[][] fetchXLData(String ExcelLocation,String SheetName)
 		e.printStackTrace();
 	}
 }
-
+//juste addted to for push verification
 }
